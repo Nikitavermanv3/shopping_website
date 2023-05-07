@@ -1,0 +1,14 @@
+.feature_event_section {
+    margin: 20px;
+}
+.featured_events_cards_container {
+    width: 100%;
+    height: 167px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7px;
+    height: max-content;
+    overflow-y: hidden;
+    margin-top: 10px;
+}
