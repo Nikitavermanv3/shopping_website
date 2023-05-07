@@ -21,10 +21,12 @@
 }
 
 .category_card_container .category_card_icon {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     height: 30px;
     width: 30px;
     margin: auto;
+    display: grid;
+    place-items: center;
 }
 
 .category_card_container .category_card_text {
