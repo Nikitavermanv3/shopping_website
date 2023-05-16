@@ -6,28 +6,114 @@ import { Link } from 'react-router-dom'
 export default function PopularCategories() {
     const popularCategoriesArr = [
         {
-            text: "Nikita",
-            iconClassName: "fa-cog"
+            text: "Facility Management",
+            iconClassName: "fa fa-building",
+            details: "facility-management"
         },
         {
             text: "Nikita",
-            iconClassName: "fa-cog"
+            iconClassName: "fa fa-truck",
+            details: "logistics"
         },
         {
             text: "Nikita",
-            iconClassName: "fa-cog"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-cog"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-cog"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-cog"
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
+        },
+        {
+            text: "Nikita",
+            iconClassName: "fa fa-cog",
+            details: ""
         }
     ]
 
@@ -38,8 +124,8 @@ export default function PopularCategories() {
                 <Link className={styles.popular_category_link} to='/viewAllCategories'>View All</Link>
             </h5>
             <div className={styles.category_cards_row}>
-                {popularCategoriesArr.map(({ text, iconClassName }, i) => (
-                    <CategoryCard key={`popular-category-card-${i}`} text={text} iconClassName={iconClassName} />
+                {popularCategoriesArr.map(({ text, iconClassName, details }, i) => (
+                    <CategoryCard key={`popular-category-card-${i}`} text={text} iconClassName={iconClassName} details={details} />
                 ))}
             </div>
         </div>

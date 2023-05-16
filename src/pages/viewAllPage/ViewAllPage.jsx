@@ -7,111 +7,127 @@ function ViewAllPage() {
 
     const recentCategoryCards = [
         {
-            text: "Nikita",
-            iconClassName: "fa-bug"
+            text: "Facility Management",
+            iconClassName: "fa fa-building",
+            details: "facility-management"
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-truck",
+            details: "logistics"
         }
     ]
 
     const allCategoryCards = [
         {
-            text: "Nikita",
-            iconClassName: "fa-bug"
+            text: "Facility Management",
+            iconClassName: "fa fa-building",
+            details: "facility-management"
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-truck",
+            details: "logistics"
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         },
         {
             text: "Nikita",
-            iconClassName: "fa-bug"
-        },
-        {
-            text: "Nikita",
-            iconClassName: "fa-bug"
-        },
-        {
-            text: "Nikita",
-            iconClassName: "fa-bug"
+            iconClassName: "fa fa-cog",
+            details: ""
         }
     ]
 
@@ -145,7 +161,7 @@ function ViewAllPage() {
             <div className={styles.category_container}>
                 {
                     recentCardsChunks.map((chunkArr) => <div className={styles.category_cards_row}>
-                        {chunkArr.map(({ text, iconClassName }, i) => <CategoryCard key={`recent-category-card-${i}`} text={text} iconClassName={iconClassName} />)}
+                        {chunkArr.map(({ text, iconClassName, details }, i) => <CategoryCard key={`recent-category-card-${i}`} text={text} iconClassName={iconClassName} details={details} />)}
                     </div>)
                 }
             </div>
@@ -153,7 +169,7 @@ function ViewAllPage() {
             <div className={styles.category_container}>
                 {
                     allCardsChunks.map((chunkArr) => <div className={styles.category_cards_row}>
-                        {chunkArr.map(({ text, iconClassName }, i) => <CategoryCard key={`all-category-card-${i}`} text={text} iconClassName={iconClassName} />)}
+                        {chunkArr.map(({ text, iconClassName, details }, i) => <CategoryCard key={`all-category-card-${i}`} text={text} iconClassName={iconClassName} details={details} />)}
                     </div>)
                 }
             </div>
